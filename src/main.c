@@ -108,6 +108,7 @@ uint16_t adcValue = 0;
 		// secuencia de escritura
 		if( f_open_( &File, FILENAME, FA_WRITE | FA_OPEN_APPEND ) == FR_OK ){
 
+
 			f_write_( &File, "Hola mundo\r\n", 50, &bytesWritten );
 
 			f_close_(&File);
